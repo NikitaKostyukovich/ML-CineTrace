@@ -4,8 +4,8 @@ import os
 from pathlib import Path
 
 # Base directories
-BASE_DIR = Path("D:/SpaceMLData")
-CODE_DIR = BASE_DIR / "code"
+BASE_DIR = Path("C:/Users/nikos/Downloads/project2")
+CODE_DIR = Path(__file__).parent
 # Output paths
 OUTPUT_DIR = CODE_DIR
 OUTPUT_CSV = CODE_DIR / "trajectory_output.csv"

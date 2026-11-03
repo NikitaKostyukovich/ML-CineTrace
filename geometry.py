@@ -11,7 +11,7 @@ def euler_to_rot_matrix_ue(roll_deg: float, pitch_deg: float, yaw_deg: float) ->
         X = Forward, Y = Right, Z = Up.
         R = R_z(Yaw) * R_y(Pitch) * R_x(Roll)
     """
-    r_pitch = math.radians(pitch_deg)
+    r_pitch = math.radians(-pitch_deg)
     r_yaw   = math.radians(yaw_deg)
     r_roll  = math.radians(roll_deg)
     

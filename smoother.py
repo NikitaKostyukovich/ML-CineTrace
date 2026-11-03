@@ -185,6 +185,7 @@ def smooth_trajectory_rts(raw_trajectory: List[Optional[List[float]]]) -> List[L
         count = end - start
         avg_x = sum(forward_states[k][0] for k in range(start, end)) / count
         avg_y = sum(forward_states[k][1] for k in range(start, end)) / count
-        smoothed.append([avg_x, avg_y, 300.0])
+        avg_z = sum(forward_states[k][2] for k in range(start, end)) / count
+        smoothed.append([avg_x, avg_y, avg_z])
         
     return smoothed
