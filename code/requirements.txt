@@ -1,0 +1,14 @@
+# Peleng Space Hackathon 3D Multi-Camera Tracker Requirements
+# Note: The core geometry, triangulation, and Kalman filtering are 100% self-contained in Python standard library!
+# The packages below are optional for full neural network video inference and advanced visualization:
+
+# Computer Vision & Deep Learning (optional for YOLO video inference)
+ultralytics>=8.0.0
+opencv-python>=4.8.0
+torch>=2.0.0
+
+# Optional Scientific / Visualization utilities
+numpy>=1.24.0
+scipy>=1.10.0
+pandas>=2.0.0
+matplotlib>=3.7.0
